@@ -2,3 +2,7 @@
 /build
 /target
 /Icon*
+/.project
+/.classpath
+/.manager
+/.settings
