@@ -116,7 +116,7 @@ case class OptionParser(warnOnUnknownArgument: Boolean)
    def showUsage = Console.err.println(usage)
       
    // -------- Parsing ---------------
-   def parse(args: String*)
+   def parse(args: Seq[String])
    {
       var i = 0
       while (i < args.length) {
@@ -137,6 +137,4 @@ case class OptionParser(warnOnUnknownArgument: Boolean)
          i += 1
       }
    }
-   
-   def parse(args: Seq[String]) { parse(args : _*) }
 }
