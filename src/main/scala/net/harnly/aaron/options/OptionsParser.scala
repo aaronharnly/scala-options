@@ -138,5 +138,5 @@ case class OptionParser(warnOnUnknownArgument: Boolean)
       }
    }
    
-   def parse(args: Array[String]) { parse(args : _*) }
+   def parse(args: Seq[String]) { parse(args : _*) }
 }
